@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg676-2" LaunchTime="1634647930">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="factor2.vdi"/>
+  <File Type="BG-DRC" Name="factor2.drc"/>
+  <File Type="BG-BGN" Name="factor2.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="factor2.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="factor2.ltx"/>
+  <File Type="RBD_FILE" Name="factor2.rbd"/>
+  <File Type="NPI_FILE" Name="factor2.npi"/>
+  <File Type="RNPI_FILE" Name="factor2.rnpi"/>
+  <File Type="CFI_FILE" Name="factor2.cfi"/>
+  <File Type="RCFI_FILE" Name="factor2.rcfi"/>
+  <File Type="PDI-FILE" Name="factor2.pdi"/>
+  <File Type="BITSTR-MMI" Name="factor2.mmi"/>
+  <File Type="BITSTR-BMM" Name="factor2_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="factor2.nky"/>
+  <File Type="BITSTR-RBT" Name="factor2.rbt"/>
+  <File Type="BITSTR-MSK" Name="factor2.msk"/>
+  <File Type="BG-BIN" Name="factor2.bin"/>
+  <File Type="BG-BIT" Name="factor2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="factor2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="factor2_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="factor2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="factor2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="factor2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="factor2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="factor2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="factor2_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="factor2_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="factor2_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="factor2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="factor2_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="factor2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="factor2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="factor2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="factor2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="factor2_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="factor2_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="factor2_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="factor2_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="factor2_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="factor2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="factor2_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="factor2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="factor2_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="factor2_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="factor2_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="factor2_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="factor2_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="factor2_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="factor2_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="factor2_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="factor2_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="factor2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="factor2_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="factor2_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="factor2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="factor2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="factor2_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="factor2_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="factor2_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="factor2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="factor2_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="factor2_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="factor2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="factor2_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="factor2.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="factor2_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="factor2_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="factor2_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="factor2_timing_summary_init.rpt"/>
+  <File Type="PWROPT-TIMING" Name="factor2_timing_summary_pwropted.rpt"/>
+  <File Type="REPORTS-TCL" Name="factor2_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="factor2_timing_summary_opted.rpt"/>
+  <File Type="PA-TCL" Name="factor2.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ad9850_par.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adc_module.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arbiter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/crc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dac.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dfs_rs485.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mdio_cfg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rx_packets.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_port_ram.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/skp_rs485.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tx_pkt_26010.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tx_pkt_26100.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tx_pkt_arp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tx_pkt_gen_25700.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/factor2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/baud_rate.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/skp_tx.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/skp_rx.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ad9850.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="factor2"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/factor.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../factor2_skp200k_08.04.21/project_1/project_1.srcs/constrs_2/imports/new/factor.xdc"/>
+        <Attr Name="ImportTime" Val="1617798562"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_1k"/>
+  <BlockFileSet Type="BlockSrcs" Name="pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_4k"/>
+</GenRun>

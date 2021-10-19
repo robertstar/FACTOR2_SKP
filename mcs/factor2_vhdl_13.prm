@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Apr 13 08:16:36 2021    /home/vladimir/Downloads/factor2_vhdl_test1_10.04.21_1813/factor2_vhdl_test1_10.04.21_1520/factor2_vhdl_test1/factor2_vhdl_test1.runs/impl_1/factor2.bit

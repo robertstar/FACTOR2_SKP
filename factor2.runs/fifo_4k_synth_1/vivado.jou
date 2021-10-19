@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 08:32:23 2021
+# Process ID: 5655
+# Current directory: /home/vladimir/Downloads/factor2_vhdl_test1_190421/factor2_vhdl_test1.runs/fifo_4k_synth_1
+# Command line: vivado -log fifo_4k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_4k.tcl
+# Log file: /home/vladimir/Downloads/factor2_vhdl_test1_190421/factor2_vhdl_test1.runs/fifo_4k_synth_1/fifo_4k.vds
+# Journal file: /home/vladimir/Downloads/factor2_vhdl_test1_190421/factor2_vhdl_test1.runs/fifo_4k_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fifo_4k.tcl -notrace

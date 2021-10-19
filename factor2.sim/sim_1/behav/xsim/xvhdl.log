@@ -1,0 +1,103 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/ip/fifo_4k/fifo_4k_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_xpm_cdc_gray'
+INFO: [VRFC 10-3107] analyzing entity '\fifo_4k_xpm_cdc_gray__2\'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_prim_wrapper'
+INFO: [VRFC 10-3107] analyzing entity '\fifo_4k_blk_mem_gen_prim_wrapper__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_compare'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_compare_0'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_compare_1'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_compare_2'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_rd_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_rd_dc_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_reset_blk_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_wr_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity '\fifo_4k_blk_mem_gen_prim_width__parameterized0\'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_clk_x_pntrs'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_rd_status_flags_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_wr_status_flags_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_rd_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_wr_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_v8_4_4_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_blk_mem_gen_v8_4_4'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_memory'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_fifo_generator_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_fifo_generator_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_fifo_generator_v13_2_5_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k_fifo_generator_v13_2_5'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_4k'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/ip/pll/pll_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pll_pll_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'pll'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/ip/fifo_1k/fifo_1k_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_xpm_cdc_gray'
+INFO: [VRFC 10-3107] analyzing entity '\fifo_1k_xpm_cdc_gray__2\'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_prim_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_compare'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_compare_0'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_compare_1'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_compare_2'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_rd_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_rd_dc_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_reset_blk_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_wr_bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_clk_x_pntrs'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_rd_status_flags_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_wr_status_flags_as'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_rd_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_wr_logic'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_v8_4_4_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_blk_mem_gen_v8_4_4'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_memory'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_fifo_generator_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_fifo_generator_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_fifo_generator_v13_2_5_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k_fifo_generator_v13_2_5'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_1k'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/ad9850_par.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ad9850_par'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/adc_module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adc_module'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/arbiter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'arbiter'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/crc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crc'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/dac.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/dfs_rs485.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dfs_rs485'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/mdio_cfg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mdio_cfg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/rx_packets.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rx_packets'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/single_port_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'single_port_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/skp_rs485.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'skp_rs485'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_26010.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tx_pkt_26010'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_26100.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tx_pkt_26100'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_arp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tx_pkt_arp'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_gen_25700.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tx_pkt_25700'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sources_1/new/factor2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'factor2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sim_1/new/factor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'factor_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sim_1/new/skp_tx_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'skp_tx_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sim_1/new/dac_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sim_1/new/dds_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/master/Downloads/factor2_vhdl_test1_040521_1607/factor2_vhdl_test1.srcs/sim_1/new/adc_module_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adc_module_tb'

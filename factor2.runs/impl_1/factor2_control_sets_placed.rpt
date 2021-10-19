@@ -1,0 +1,329 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 15:54:24 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_control_sets -verbose -file factor2_control_sets_placed.rpt
+| Design       : factor2
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   251 |
+|    Minimum number of control sets                        |   251 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   576 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   251 |
+| >= 0 to < 4        |    50 |
+| >= 4 to < 6        |    28 |
+| >= 6 to < 8        |     8 |
+| >= 8 to < 10       |    65 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |    15 |
+| >= 14 to < 16      |     4 |
+| >= 16              |    81 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             878 |          308 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              49 |           31 |
+| Yes          | No                    | No                     |            4137 |         1594 |
+| Yes          | No                    | Yes                    |             128 |           31 |
+| Yes          | Yes                   | No                     |             464 |          142 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+|           Clock Signal          |                                         Enable Signal                                         |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------+-----------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_6                                                                         |                                             |                1 |              1 |         1.00 |
+| ~rx_pkt/PKT_26100_DONE          |                                                                                               | tx_26100/clr_done                           |                1 |              1 |         1.00 |
+|  rx_pkt/clr_26010               |                                                                                               | tx_26010/PKT_26010_CLR                      |                1 |              1 |         1.00 |
+|  rx_pkt/clr_26100               |                                                                                               | tx_26100/PKT_26100_CLR                      |                1 |              1 |         1.00 |
+|  rx_pkt/clr_apo                 |                                                                                               | PKT_APO_CLR                                 |                1 |              1 |         1.00 |
+|  rx_pkt/clr_arp                 |                                                                                               | PKT_ARP_CLR                                 |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | dds/dds_clk_i_1_n_0                                                                           | mdio/SR[0]                                  |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | dfs/dfs_timeout_eop[18]_i_2_n_0                                                               |                                             |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/skp_timeot                                                                           | tx_25700/skp_timeot[5]_i_1_n_0              |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | skp/skp_timeout[31]_i_2_n_0                                                                   |                                             |                1 |              1 |         1.00 |
+|  rx_pkt/set_apo_t_reg_i_2_n_0   |                                                                                               |                                             |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/MEM_SKP_26100_RD_ADDR_t                                                              |                                             |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | adc/adc_fd_o                                                                                  |                                             |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | dds/dds_updata_i_1_n_0                                                                        | mdio/SR[0]                                  |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out1         | dfs/ram1_rd_addr[5]_i_2_n_0                                                                   | dfs/ram1_rd_addr[5]_i_1_n_0                 |                1 |              1 |         1.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/rx_count[15]_i_2_n_0                                                                   |                                             |                1 |              1 |         1.00 |
+| ~pll_inst/inst/clk_out1         | arb_inst/FSM_onehot_arb_state[4]_i_1_n_0                                                      |                                             |                1 |              1 |         1.00 |
+|  pll_inst/inst/clk_out3         |                                                                                               |                                             |                1 |              1 |         1.00 |
+| ~dac_fd                         | dac_inst/dac_byte_cnt[9]_i_1_n_0                                                              | dac_inst/dac_byte_cnt[5]_i_1_n_0            |                1 |              1 |         1.00 |
+| ~PKT_ARP_DONE_BUFG              |                                                                                               | clr_arp_done                                |                1 |              1 |         1.00 |
+|  PKT_ARP_DONE_BUFG              |                                                                                               | set_arp_done                                |                1 |              1 |         1.00 |
+|  PKT_ARP_DONE_BUFG              |                                                                                               | tx_arp/send_I_have_reg                      |                1 |              1 |         1.00 |
+|  dfs/clr_done2                  |                                                                                               | tx_26100/MEM_DFS_26100_RD_EN                |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_APO_DONE            |                                                                                               | dds/get_apo                                 |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_APO_DONE            |                                                                                               | tx_25700/get_apo                            |                1 |              1 |         1.00 |
+|  dac_inst/envelope_t            |                                                                                               | tx_25700/trigger                            |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_APO_DONE            |                                                                                               | set_apo_done                                |                1 |              1 |         1.00 |
+| ~rx_pkt/PKT_APO_DONE            |                                                                                               | clr_apo_done                                |                1 |              1 |         1.00 |
+|  dfs/clr_done1                  |                                                                                               | tx_26010/MEM_DFS_26010_RD_EN                |                1 |              1 |         1.00 |
+|  dac_inst/dac_sclk_OBUF         |                                                                                               |                                             |                1 |              1 |         1.00 |
+|  dfs/set_done2_t0               |                                                                                               | dfs/set_done2                               |                1 |              1 |         1.00 |
+|  dfs/set_done1_t0               |                                                                                               | dfs/set_done1                               |                1 |              1 |         1.00 |
+|  rx_pkt/set_26010_t_reg_i_2_n_0 |                                                                                               |                                             |                1 |              1 |         1.00 |
+|  rx_pkt/set_26100_t_reg_i_2_n_0 |                                                                                               |                                             |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_26100_DONE          |                                                                                               | tx_26100/set_done                           |                1 |              1 |         1.00 |
+|  rx_pkt/set_arp_t_reg_i_2_n_0   |                                                                                               |                                             |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_26010_DONE          |                                                                                               | dfs/clr_26010_t                             |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_26010_DONE          |                                                                                               | tx_26010/set_done                           |                1 |              1 |         1.00 |
+| ~rx_pkt/PKT_26010_DONE          |                                                                                               | tx_26010/clr_done                           |                1 |              1 |         1.00 |
+|  rx_pkt/PKT_26100_DONE          |                                                                                               | dfs/clr_26100_t                             |                1 |              1 |         1.00 |
+|  rx_pkt/set_arp_oper__0         |                                                                                               |                                             |                1 |              2 |         2.00 |
+|  dac_inst/dac_sclk_OBUF         | dac_inst/dac_sync_i_1_n_0                                                                     |                                             |                1 |              2 |         2.00 |
+|  pll_inst/inst/clk_out1         | skp/ram2_wr_addr0                                                                             |                                             |                1 |              2 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/sel[7]_i_2__0_n_0                                                                    |                                             |                1 |              2 |         2.00 |
+|  pll_inst/inst/clk_out1         | adc/adc_clk_o                                                                                 |                                             |                1 |              2 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/MEM_SKP_26100_RD_ADDR_t                                                              | tx_26100/MEM_SKP_26100_RD_ADDR_t[3]_i_1_n_0 |                1 |              3 |         3.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/sel[7]_i_2__0_n_0                                                                    | tx_26100/sel[7]_i_1__1_n_0                  |                1 |              3 |         3.00 |
+|  PHY_MDC_OBUF_BUFG              |                                                                                               |                                             |                2 |              3 |         1.50 |
+| ~pll_inst/inst/clk_out1         | arb_inst/FSM_onehot_arb_state[4]_i_1_n_0                                                      | arb_inst/FSM_onehot_arb_state[3]_i_1_n_0    |                1 |              3 |         3.00 |
+|  pll_inst/inst/clk_out1         | dfs/write_st[3]_i_1_n_0                                                                       |                                             |                2 |              3 |         1.50 |
+| ~pll_inst/inst/clk_out1         | arb_inst/s1_rd_t0                                                                             |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/tx_busy_reg_1[0]                                                                |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | adc/cs_o                                                                                      | adc/cs_o[7]_i_1_n_0                         |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | adc/cs_o                                                                                      | adc/cs_o[6]_i_1_n_0                         |                2 |              4 |         2.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/rx_count0                                                                       |                                             |                1 |              4 |         4.00 |
+|  PHY_MDC_OBUF_BUFG              | mdio/addr                                                                                     |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | dds/FSM_sequential_state[3]_i_2_n_0                                                           | mdio/SR[0]                                  |                2 |              4 |         2.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/os_count0                                                                       |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/tx_count[3]_i_1__1_n_0                                                          |                                             |                1 |              4 |         4.00 |
+| ~PHY_MDC_OBUF_BUFG              |                                                                                               |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/tx_count[3]_i_1__0_n_0                                                          |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/tx_st_reg[3][0]                                                                 |                                             |                1 |              4 |         4.00 |
+| ~pll_inst/inst/clk_out1         | arb_inst/s1_rd_t                                                                              | arb_inst/s1_rd_t0                           |                3 |              4 |         1.33 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/os_count0                                                                       |                                             |                1 |              4 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_rx_state                                                                           |                                             |                4 |              4 |         1.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_VARU_RAM_WR_EN1                                                                    |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/rx_count0                                                                       |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/rx_busy_t_reg[0]                                                                |                                             |                1 |              4 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/rx_busy_t_reg[0]                                                                | skp/uart_inst/rx_busy_t_reg[0]_0            |                2 |              4 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/SKP25700_RD_ADDR_t[4]_i_2_n_0                                                        | tx_25700/SKP25700_RD_ADDR_t[4]_i_1_n_0      |                2 |              5 |         2.50 |
+|  pll_inst/inst/clk_out4         |                                                                                               |                                             |                2 |              5 |         2.50 |
+|  PHY_MDC_OBUF_BUFG              | mdio/FSM_sequential_State_cfg[4]_i_1_n_0                                                      |                                             |                1 |              5 |         5.00 |
+| ~dac_fd                         |                                                                                               |                                             |                3 |              5 |         1.67 |
+|  pll_inst/inst/clk_out1         | dfs/ram1_rd_addr[5]_i_2_n_0                                                                   |                                             |                3 |              5 |         1.67 |
+|  dac_inst/dac_sclk_OBUF         |                                                                                               | dac_inst/sel[4]_i_1__0_n_0                  |                2 |              5 |         2.50 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/write_st_reg[0][0]                                                              | skp/ram1_wr_addr                            |                1 |              5 |         5.00 |
+|  pll_inst/inst/clk_out1         | skp/ram1_rd_addr[0]_i_1_n_0                                                                   |                                             |                2 |              5 |         2.50 |
+|  pll_inst/inst/clk_out1         | skp/sync[23]_i_1_n_0                                                                          | skp/uart_inst/rx_busy_t_reg[0]_1            |                3 |              5 |         1.67 |
+|  pll_inst/inst/clk_out1         | dfs/ram2_wr_addr[6]_i_1_n_0                                                                   |                                             |                2 |              6 |         3.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/tx_st_reg[0][0]                                                                 |                                             |                1 |              6 |         6.00 |
+| ~PHY_MDC_OBUF_BUFG              | mdio/bit_no[5]_i_1_n_0                                                                        | mdio/mdio_high_z0                           |                2 |              6 |         3.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_VARU_RAM_WR_EN1                                                                    | rx_pkt/PKT_VARU_RAM_WR_EN20_out             |                2 |              6 |         3.00 |
+|  pll_inst/inst/clk_out4         |                                                                                               | mdio/clear                                  |                2 |              7 |         3.50 |
+|  pll_inst/inst/clk_out1         | dfs/ram2_wr_addr[6]_i_1_n_0                                                                   | dfs/ram2_wr_addr[3]_i_1__0_n_0              |                4 |              7 |         1.75 |
+|  pll_inst/inst/clk_out1         | tx_25700/skp_timeot                                                                           |                                             |                3 |              7 |         2.33 |
+|  pll_inst/inst/clk_out1         |                                                                                               | skp/uart_inst/count_os[6]_i_1_n_0           |                2 |              7 |         3.50 |
+|  pll_inst/inst/clk_out1         | tx_arp/tx_state_reg_n_0                                                                       |                                             |                4 |              8 |         2.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_15                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_7                                                                         |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | skp/ram2_wr_addr0                                                                             | skp/ram2_wr_data[7]_i_1_n_0                 |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/ram2_wr_addr0                                                                             | skp/ram2_wr_addr[4]_i_1__0_n_0              |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_16                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_11                                                                        |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_14                                                                        |                                             |                4 |              8 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/skp_timeot                                                                           |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_9                                                                         |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/E[0]                                                                            |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_13                                                                        |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_12                                                                        |                                             |                4 |              8 |         2.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_ip3                                                                        |                                             |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/E[0]                                                                            |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_UDP_dlen2                                                                          |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_IPv4_IP_dst4                                                                       |                                             |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | dds/dds_pdata[7]_i_1_n_0                                                                      | mdio/SR[0]                                  |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | tx_26010/MEM_DFS_26010_RD_ADDR_t                                                              | tx_26010/MEM_DFS_26010_RD_EN0               |                4 |              8 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/sel[7]_i_1_n_0                                                                       |                                             |                7 |              8 |         1.14 |
+|  pll_inst/inst/clk_out1         | tx_25700/din[7]_i_1_n_0                                                                       |                                             |                4 |              8 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/set_apo                                                                              |                                             |                2 |              8 |         4.00 |
+|  PHY_GTXC_OBUF                  |                                                                                               |                                             |                4 |              8 |         2.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/rx_data0                                                                        |                                             |                1 |              8 |         8.00 |
+|  PHY_MDC_OBUF_BUFG              | mdio/PHY_REG22                                                                                |                                             |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/tx_buffer[8]_i_1__0_n_0                                                         |                                             |                1 |              8 |         8.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/wait_cnt[7]_i_2_n_0                                                                  | tx_25700/wait_cnt[7]_i_1_n_0                |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_VARU_RAM_WR_EN1                                                                    | rx_pkt/PKT_VARU_RAM_WR_DATA[7]_i_1_n_0      |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_26010/din[7]_i_1__0_n_0                                                                    |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | tx_26010/sel[7]_i_1__0_n_0                                                                    |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | tx_26100/MEM_DFS_26100_RD_ADDR_t                                                              | tx_26100/MEM_DFS_26100_RD_EN0               |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_t__0                                                                           |                                             |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/din[7]_i_1__1_n_0                                                                    |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_ip0                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_ip1                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_8                                                                         |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_eth_type1                                                                          |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac5                                                                       |                                             |                4 |              8 |         2.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac4                                                                       |                                             |                2 |              8 |         4.00 |
+| ~dac_fd                         | dac_inst/wr_bits                                                                              | rx_pkt/PKT_APO_COMM_reg[2]_0                |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac0                                                                       |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac1                                                                       |                                             |                5 |              8 |         1.60 |
+|  pll_inst/inst/clk_out1         |                                                                                               | dfs/uart_inst/count_os[7]_i_1__0_n_0        |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac2                                                                       |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_mac3                                                                       |                                             |                3 |              8 |         2.67 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_arp_src_ip2                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_APO_COMM[79]_i_1_n_0                                                               |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/rx_data0                                                                        |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_apo_comm_1                                                                         |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_IPv4_IP_dst1                                                                       |                                             |                1 |              8 |         8.00 |
+|  pll_inst/inst/clk_out1         | dfs/uart_inst/rx_buffer0                                                                      |                                             |                1 |              8 |         8.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_IPv4_IP_dst2                                                                       |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_DFS_FIFO_WR_EN1                                                                    | rx_pkt/PKT_DFS_FIFO_WR_DATA[7]_i_1_n_0      |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_UDP_DP2                                                                            |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | dfs/ram2_wr_addr[6]_i_1_n_0                                                                   | dfs/ram2_wr_data[7]_i_1_n_0                 |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_UDP_DP1                                                                            |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_IPv4_type                                                                          |                                             |                2 |              8 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/ram1_wr_bytes[7]_i_1_n_0                                                                  |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/PKT_APO_COMM[135]_i_1_n_0                                                              |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_IPv4_IP_dst3                                                                       |                                             |                2 |              8 |         4.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/set_UDP_dlen1                                                                          |                                             |                3 |              8 |         2.67 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/rx_buffer0                                                                      |                                             |                2 |              9 |         4.50 |
+| ~pll_inst/inst/clk_out1         | arb_inst/y_dout_t                                                                             |                                             |                4 |              9 |         2.25 |
+| ~dac_fd                         | dac_inst/dac_byte_cnt[9]_i_1_n_0                                                              |                                             |                4 |              9 |         2.25 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/tx_buffer[9]_i_1_n_0                                                            |                                             |                2 |              9 |         4.50 |
+|  pll_inst/inst/clk_out1         | dfs/mem1_inst/RAM_reg_192_255_0_2_i_1_n_0                                                     |                                             |                3 |             12 |         4.00 |
+|  PHY_MDC_OBUF_BUFG              | mdio/PHY_REG27                                                                                |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__9/RAM_reg_192_255_0_2_i_1_n_0                                                           |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__8/RAM_reg_128_191_0_2_i_1_n_0                                                           |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__8/RAM_reg_192_255_0_2_i_1_n_0                                                           |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__9/RAM_reg_64_127_0_2_i_1_n_0                                                            |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__8/RAM_reg_64_127_0_2_i_1_n_0                                                            |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__9/RAM_reg_0_63_0_2_i_1_n_0                                                              |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__9/RAM_reg_128_191_0_2_i_1_n_0                                                           |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/mem1_inst/RAM_reg_64_127_0_2_i_1_n_0                                                      |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/__8/RAM_reg_0_63_0_2_i_1_n_0                                                              |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/mem1_inst/RAM_reg_0_63_0_2_i_1_n_0                                                        |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/mem1_inst/RAM_reg_128_191_0_2_i_1_n_0                                                     |                                             |                3 |             12 |         4.00 |
+|  pll_inst/inst/clk_out1         | dds/m[12]_i_1_n_0                                                                             | mdio/SR[0]                                  |                3 |             13 |         4.33 |
+|  PHY_MDC_OBUF_BUFG              | mdio/PHY_DELAY                                                                                | mdio/PHY_DELAY[13]_i_1_n_0                  |                4 |             13 |         3.25 |
+|  pll_inst/inst/clk_out1         | tx_25700/index[10]_i_2_n_0                                                                    | tx_25700/index[10]_i_1_n_0                  |                4 |             14 |         3.50 |
+|  pll_inst/inst/clk_out1         | dds/yy                                                                                        | mdio/SR[0]                                  |                5 |             14 |         2.80 |
+|  PHY_MDC_OBUF_BUFG              | mdio/PHY_REG0                                                                                 |                                             |                5 |             15 |         3.00 |
+| ~PHY_RXC_IBUF_BUFG              | rx_pkt/rx_count[15]_i_2_n_0                                                                   | rx_pkt/rx_count[15]_i_1_n_0                 |                4 |             15 |         3.75 |
+|  pll_inst/inst/clk_out1         | tx_25700/y9                                                                                   |                                             |                5 |             16 |         3.20 |
+|  pll_inst/inst/clk_out1         | tx_25700/ip4_crc_t2                                                                           |                                             |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/env_timer                                                                            |                                             |                4 |             16 |         4.00 |
+|  rx_pkt/rx_udp_dlen             |                                                                                               |                                             |                6 |             16 |         2.67 |
+|  rx_pkt/eth_type_rx__0          |                                                                                               |                                             |                5 |             16 |         3.20 |
+|  pll_inst/inst/clk_out1         | tx_25700/IPv4_ID[0]_i_1_n_0                                                                   |                                             |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_26100/y9                                                                                   |                                             |                5 |             16 |         3.20 |
+|  pll_inst/inst/clk_out1         | tx_26100/ip4_crc_t2                                                                           |                                             |                4 |             16 |         4.00 |
+|  PHY_MDC_OBUF_BUFG              | mdio/wr_data[15]_i_2_n_0                                                                      | mdio/wr_data[15]_i_1_n_0                    |                3 |             16 |         5.33 |
+|  pll_inst/inst/clk_out1         | tx_26010/IPv4_ID[0]_i_1__0_n_0                                                                |                                             |                4 |             16 |         4.00 |
+| ~PHY_MDC_OBUF_BUFG              | mdio/rd_data                                                                                  |                                             |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out1         | skp/ram1_wr_en                                                                                |                                             |                2 |             16 |         8.00 |
+|  pll_inst/inst/clk_out1         | tx_26010/y9                                                                                   |                                             |                7 |             16 |         2.29 |
+|  pll_inst/inst/clk_out1         | tx_26100/IPv4_ID[0]_i_1__1_n_0                                                                |                                             |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_26010/ip4_crc_t2                                                                           |                                             |                4 |             16 |         4.00 |
+|  pll_inst/inst/clk_out1         | dfs/dfs_timeout_eop[18]_i_2_n_0                                                               | dfs/dfs_timeout_eop[18]_i_1_n_0             |                5 |             18 |         3.60 |
+|  pll_inst/inst/clk_out1         | tx_26010/ip4_crc_t1                                                                           |                                             |                6 |             19 |         3.17 |
+|  pll_inst/inst/clk_out1         | tx_25700/ip4_crc_t1                                                                           |                                             |                5 |             19 |         3.80 |
+|  pll_inst/inst/clk_out1         | skp/sync[23]_i_1_n_0                                                                          |                                             |                6 |             19 |         3.17 |
+|  pll_inst/inst/clk_out1         | tx_26100/ip4_crc_t1                                                                           |                                             |                5 |             19 |         3.80 |
+|  pll_inst/inst/clk_out1         | dfs/tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0]      |                                             |                4 |             20 |         5.00 |
+| ~dac_fd                         | dac_inst/mem_varu_inst/FSM_onehot_dac_st2_reg[2]                                              | dac_inst/FSM_onehot_dac_st2_reg[2]_1        |                8 |             20 |         2.50 |
+|  pll_inst/inst/clk_out4         | mdio/phy_rst.phy_cnt[0]_i_1_n_0                                                               |                                             |                6 |             23 |         3.83 |
+|  pll_inst/inst/clk_out1         | tx_26100/fcs_t2                                                                               |                                             |                9 |             24 |         2.67 |
+|  pll_inst/inst/clk_out1         | tx_26010/fcs_t2[7]_i_1__2_n_0                                                                 |                                             |               12 |             24 |         2.00 |
+|  pll_inst/inst/clk_out1         | tx_arp/fcs_t20                                                                                |                                             |                9 |             24 |         2.67 |
+| ~pll_inst/inst/clk_out1         | fifo_arp/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/rd_en_0      |                                             |                6 |             24 |         4.00 |
+| ~pll_inst/inst/clk_out1         | fifo_pkt25700/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/rd_en_0 |                                             |                4 |             24 |         6.00 |
+| ~pll_inst/inst/clk_out1         | fifo_pkt26100/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/rd_en_0 |                                             |                5 |             24 |         4.80 |
+| ~pll_inst/inst/clk_out1         | fifo_pkt26010/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/rd_en_0 |                                             |                4 |             24 |         6.00 |
+|  pll_inst/inst/clk_out1         | tx_25700/fcs_t2                                                                               |                                             |               11 |             24 |         2.18 |
+|  pll_inst/inst/clk_out1         | dfs/ram1_wr_data[7]_i_2__0_n_0                                                                | dfs/ram1_wr_data[7]_i_1__0_n_0              |                7 |             24 |         3.43 |
+|  pll_inst/inst/clk_out1         | dfs/dfs_timeout_500ms[0]_i_2_n_0                                                              | dfs/dfs_timeout_500ms[0]_i_1_n_0            |                7 |             26 |         3.71 |
+|  PHY_RXC_IBUF_BUFG              | dfs/tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]      |                                             |                8 |             30 |         3.75 |
+|  pll_inst/inst/clk_out1         | skp/skp_timeout[31]_i_2_n_0                                                                   | skp/skp_timeout[31]_i_1_n_0                 |                8 |             31 |         3.88 |
+|  pll_inst/inst/clk_out1         | tx_25700/fcs_en_reg_n_0                                                                       | tx_25700/fcs_rst_reg_n_0                    |                8 |             32 |         4.00 |
+| ~dac_fd                         | dac_inst/dac_div_cnt[31]_i_2_n_0                                                              | dac_inst/dac_div_cnt[31]_i_1_n_0            |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out1         | skp/uart_inst/tx_st_reg[2]                                                                    |                                             |                6 |             32 |         5.33 |
+|  pll_inst/inst/clk_out1         | skp/MEM_SKP_25700_BUSY                                                                        |                                             |                4 |             32 |         8.00 |
+|  pll_inst/inst/clk_out1         | tx_arp/fcs_en_reg_n_0                                                                         | tx_arp/fcs_rst_reg_n_0                      |                7 |             32 |         4.57 |
+|  pll_inst/inst/clk_out1         | tx_26100/fcs_en_reg_n_0                                                                       | tx_26100/fcs_rst_reg_n_0                    |                8 |             32 |         4.00 |
+|  pll_inst/inst/clk_out1         | tx_26010/fcs_en_reg_n_0                                                                       | tx_26010/fcs_rst_reg_n_0                    |                8 |             32 |         4.00 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[839]                                                                             |                                             |               20 |             32 |         1.60 |
+|  pll_inst/inst/clk_out1         | tx_25700/pkt_cnt[31]_i_2_n_0                                                                  | tx_25700/pkt_cnt[31]_i_1_n_0                |                9 |             32 |         3.56 |
+|  pll_inst/inst/clk_out1         | tx_25700/cnt_get_pkt[31]_i_1_n_0                                                              |                                             |               12 |             32 |         2.67 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[967]                                                                             |                                             |               22 |             32 |         1.45 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[919]                                                                             |                                             |               19 |             32 |         1.68 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[903]                                                                             |                                             |               20 |             32 |         1.60 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[855]                                                                             |                                             |               21 |             32 |         1.52 |
+| ~PHY_RXC_IBUF_BUFG              |                                                                                               |                                             |               21 |             35 |         1.67 |
+|  pll_inst/inst/clk_out1         | fifo_pkt26100/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]    |                                             |               10 |             36 |         3.60 |
+|  pll_inst/inst/clk_out1         | fifo_pkt26010/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]    |                                             |               11 |             36 |         3.27 |
+|  pll_inst/inst/clk_out1         | fifo_pkt25700/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]    |                                             |               11 |             36 |         3.27 |
+|  pll_inst/inst/clk_out1         | fifo_arp/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]         |                                             |               10 |             36 |         3.60 |
+|  PHY_RXC_IBUF_BUFG              |                                                                                               |                                             |                9 |             42 |         4.67 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[199]                                                                             |                                             |               36 |             48 |         1.33 |
+|  pll_inst/inst/clk_out1         | tx_26010/dst_mac_t                                                                            |                                             |               14 |             48 |         3.43 |
+|  pll_inst/inst/clk_out1         | tx_25700/dst_mac_t                                                                            | tx_25700/dst_mac_t[47]_i_1__1_n_0           |                9 |             48 |         5.33 |
+|  pll_inst/inst/clk_out1         | tx_26100/dst_mac_t                                                                            |                                             |               18 |             48 |         2.67 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[391]                                                                             |                                             |               35 |             64 |         1.83 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[471]                                                                             |                                             |               42 |             64 |         1.52 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[487]                                                                             |                                             |               44 |             64 |         1.45 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[439]                                                                             |                                             |               46 |             64 |         1.39 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[279]                                                                             |                                             |               38 |             64 |         1.68 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[423]                                                                             |                                             |               43 |             64 |         1.49 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[407]                                                                             |                                             |               39 |             64 |         1.64 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[215]                                                                             |                                             |               53 |             64 |         1.21 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[231]                                                                             |                                             |               50 |             64 |         1.28 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[259]                                                                             |                                             |               40 |             64 |         1.60 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[151]                                                                             |                                             |               37 |             64 |         1.73 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[135]                                                                             |                                             |               44 |             64 |         1.45 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[23]                                                                              |                                             |               40 |             64 |         1.60 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[87]                                                                              |                                             |               41 |             64 |         1.56 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[247]                                                                             |                                             |               52 |             64 |         1.23 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[455]                                                                             |                                             |               46 |             64 |         1.39 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[71]                                                                              |                                             |               40 |             64 |         1.60 |
+|  pll_inst/inst/clk_out1         | adc/adc_data[7]                                                                               |                                             |               33 |             69 |         2.09 |
+|  PKT_ARP_DONE_BUFG              |                                                                                               |                                             |               25 |             80 |         3.20 |
+| ~pll_inst/inst/clk_out1         |                                                                                               |                                             |               65 |            243 |         3.74 |
+|  pll_inst/inst/clk_out1         |                                                                                               |                                             |              158 |            413 |         2.61 |
+|  pll_inst/inst/clk_out1         | tx_25700/adc_data_t                                                                           |                                             |              262 |           1392 |         5.31 |
++---------------------------------+-----------------------------------------------------------------------------------------------+---------------------------------------------+------------------+----------------+--------------+
+
+

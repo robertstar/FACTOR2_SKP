@@ -1,0 +1,29 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../factor2_vhdl_test1.srcs/sources_1/ip/fifo_4k/fifo_4k_sim_netlist.vhdl" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/ip/pll/pll_sim_netlist.vhdl" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/ip/fifo_1k/fifo_1k_sim_netlist.vhdl" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/ad9850_par.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/adc_module.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/arbiter.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/crc.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/dac.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/dfs_rs485.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/mdio_cfg.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/rx_packets.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/single_port_ram.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/skp_rs485.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_26010.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_26100.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_arp.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/tx_pkt_gen_25700.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/uart.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sources_1/new/factor2.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sim_1/new/factor_tb.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sim_1/new/skp_tx_tb.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sim_1/new/dac_tb.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sim_1/new/dds_tb.vhd" \
+"../../../../factor2_vhdl_test1.srcs/sim_1/new/adc_module_tb.vhd" \
+
+# Do not sort compile order
+nosort

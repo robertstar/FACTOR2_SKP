@@ -1,0 +1,786 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 15:52:13 2021
+# Process ID: 24214
+# Current directory: /home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1
+# Command line: vivado -log factor2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source factor2.tcl
+# Log file: /home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/factor2.vds
+# Journal file: /home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source factor2.tcl -notrace
+Command: synth_design -top factor2 -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24237
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.242 ; gain = 0.000 ; free physical = 160 ; free virtual = 8687
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'factor2' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:97]
+INFO: [Synth 8-3491] module 'pll' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/pll_stub.vhdl:5' bound to instance 'pll_inst' of component 'pll' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:609]
+INFO: [Synth 8-638] synthesizing module 'pll' [/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/pll_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'mdio_cfg' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/mdio_cfg.vhd:28' bound to instance 'mdio' of component 'mdio_cfg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:619]
+INFO: [Synth 8-638] synthesizing module 'mdio_cfg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/mdio_cfg.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'mdio_cfg' (1#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/mdio_cfg.vhd:38]
+INFO: [Synth 8-3491] module 'adc_module' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:29' bound to instance 'adc' of component 'adc_module' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:629]
+INFO: [Synth 8-638] synthesizing module 'adc_module' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:52]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:118]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:120]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:142]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:161]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:180]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:199]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:218]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:239]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:258]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:277]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:296]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:315]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:334]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:355]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:374]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:393]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:412]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:431]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:450]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:472]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:491]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:510]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:529]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:548]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:567]
+INFO: [Synth 8-256] done synthesizing module 'adc_module' (2#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/adc_module.vhd:52]
+INFO: [Synth 8-3491] module 'tx_pkt_25700' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:29' bound to instance 'tx_25700' of component 'tx_pkt_25700' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:647]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_25700' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:62]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:34' bound to instance 'crc_inst' of component 'crc' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'crc' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'crc' (3#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:43]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_25700' (4#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:62]
+INFO: [Synth 8-3491] module 'tx_pkt_26100' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:29' bound to instance 'tx_26100' of component 'tx_pkt_26100' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:679]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_26100' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:63]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:34' bound to instance 'crc_inst' of component 'crc' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_26100' (5#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:63]
+INFO: [Synth 8-3491] module 'tx_pkt_26010' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:29' bound to instance 'tx_26010' of component 'tx_pkt_26010' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:713]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_26010' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:56]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:34' bound to instance 'crc_inst' of component 'crc' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_26010' (6#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:56]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_pkt25700' of component 'fifo_4k' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'fifo_4k' [/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_4k_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_pkt26100' of component 'fifo_4k' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:753]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_pkt26010' of component 'fifo_4k' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:766]
+INFO: [Synth 8-3491] module 'rx_packets' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:29' bound to instance 'rx_pkt' of component 'rx_packets' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:779]
+INFO: [Synth 8-638] synthesizing module 'rx_packets' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:71]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:637]
+WARNING: [Synth 8-614] signal 'IPv4_type' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:253]
+WARNING: [Synth 8-614] signal 'IPv4_IP_dst' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:253]
+WARNING: [Synth 8-614] signal 'UDP_DP' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:253]
+WARNING: [Synth 8-614] signal 'UDP_dlen' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:253]
+WARNING: [Synth 8-614] signal 'rx_udp_dlen' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:253]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:668]
+INFO: [Synth 8-256] done synthesizing module 'rx_packets' (7#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:71]
+INFO: [Synth 8-3491] module 'tx_pkt_arp' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:27' bound to instance 'tx_arp' of component 'tx_pkt_arp' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:815]
+INFO: [Synth 8-638] synthesizing module 'tx_pkt_arp' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:52]
+INFO: [Synth 8-3491] module 'crc' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/crc.vhd:34' bound to instance 'fcs' of component 'crc' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:120]
+WARNING: [Synth 8-614] signal 'arp_request_mac' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:137]
+WARNING: [Synth 8-614] signal 'arp_request_ip' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'tx_pkt_arp' (8#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:52]
+INFO: [Synth 8-3491] module 'fifo_4k' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_4k_stub.vhdl:5' bound to instance 'fifo_arp' of component 'fifo_4k' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:831]
+INFO: [Synth 8-3491] module 'arbiter' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/arbiter.vhd:235' bound to instance 'arb_inst' of component 'arbiter' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:843]
+INFO: [Synth 8-638] synthesizing module 'arbiter' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/arbiter.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'arbiter' (9#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/arbiter.vhd:258]
+INFO: [Synth 8-3491] module 'dac' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dac.vhd:28' bound to instance 'dac_inst' of component 'dac' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:872]
+INFO: [Synth 8-638] synthesizing module 'dac' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dac.vhd:45]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 1024 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem_varu_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dac.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 1024 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'single_port_ram' (10#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'dac' (11#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dac.vhd:45]
+INFO: [Synth 8-3491] module 'ad9850_par' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/ad9850_par.vhd:29' bound to instance 'dds' of component 'ad9850_par' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:891]
+INFO: [Synth 8-638] synthesizing module 'ad9850_par' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/ad9850_par.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'ad9850_par' (12#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/ad9850_par.vhd:50]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter SPEED bound to: 57600 - type: integer 
+	Parameter TX_PKT bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'skp_rs485' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:29' bound to instance 'skp' of component 'skp_rs485' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:904]
+INFO: [Synth 8-638] synthesizing module 'skp_rs485' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:61]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter SPEED bound to: 57600 - type: integer 
+	Parameter TX_PKT bound to: 50 - type: integer 
+	Parameter clk_freq bound to: 125000000 - type: integer 
+	Parameter baud_rate bound to: 57600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'uart' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:28' bound to instance 'uart_inst' of component 'uart' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'uart' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:51]
+	Parameter clk_freq bound to: 125000000 - type: integer 
+	Parameter baud_rate bound to: 57600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'os_pulse' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'uart' (13#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:51]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem1_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'single_port_ram__parameterized1' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'single_port_ram__parameterized1' (13#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem2_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:229]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 32 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem3_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:247]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:317]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:486]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:557]
+INFO: [Synth 8-256] done synthesizing module 'skp_rs485' (14#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:61]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter SPEED bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'dfs_rs485' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:29' bound to instance 'dfs' of component 'dfs_rs485' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:936]
+INFO: [Synth 8-638] synthesizing module 'dfs_rs485' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:65]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter SPEED bound to: 9600 - type: integer 
+	Parameter clk_freq bound to: 125000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'uart' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:28' bound to instance 'uart_inst' of component 'uart' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'uart__parameterized1' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:51]
+	Parameter clk_freq bound to: 125000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 0 - type: integer 
+WARNING: [Synth 8-614] signal 'os_pulse' is read in the process but is not in the sensitivity list [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'uart__parameterized1' (14#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/uart.vhd:51]
+INFO: [Synth 8-3491] module 'fifo_1k' declared at '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_1k_stub.vhdl:5' bound to instance 'tx_fifo' of component 'fifo_1k' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'fifo_1k' [/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/.Xil/Vivado-24214-pc/realtime/fifo_1k_stub.vhdl:20]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 256 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem1_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'single_port_ram__parameterized3' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 256 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'single_port_ram__parameterized3' (14#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:46]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 256 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem2_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:362]
+	Parameter RAM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter RAM_DATA_LENGTH bound to: 256 - type: integer 
+	Parameter RAM_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'single_port_ram' declared at '/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/single_port_ram.vhd:28' bound to instance 'mem3_inst' of component 'single_port_ram' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:380]
+INFO: [Synth 8-256] done synthesizing module 'dfs_rs485' (15#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'factor2' (16#1) [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:97]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.242 ; gain = 0.000 ; free physical = 919 ; free virtual = 9411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.242 ; gain = 0.000 ; free physical = 928 ; free virtual = 9420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.242 ; gain = 0.000 ; free physical = 928 ; free virtual = 9420
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2339.242 ; gain = 0.000 ; free physical = 936 ; free virtual = 9405
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt25700'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt25700'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt26100'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt26100'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt26010'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_pkt26010'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_4k/fifo_4k/fifo_4k_in_context.xdc] for cell 'fifo_arp'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/pll/pll/pll_in_context.xdc] for cell 'pll_inst'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_1k/fifo_1k/fifo_1k_in_context.xdc] for cell 'dfs/tx_fifo'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/fifo_1k/fifo_1k/fifo_1k_in_context.xdc] for cell 'dfs/tx_fifo'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/constrs_1/imports/new/factor.xdc]
+WARNING: [Vivado 12-507] No nets matched 'PHY_RXC_IBUF'. [/home/master/FPGA_proj/FACTOR2/factor2.srcs/constrs_1/imports/new/factor.xdc:267]
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR2/factor2.srcs/constrs_1/imports/new/factor.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/master/FPGA_proj/FACTOR2/factor2.srcs/constrs_1/imports/new/factor.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/factor2_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/master/FPGA_proj/FACTOR2/factor2.srcs/constrs_1/imports/new/factor.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2374.113 ; gain = 0.000 ; free physical = 788 ; free virtual = 9280
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2374.113 ; gain = 0.000 ; free physical = 788 ; free virtual = 9280
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'fifo_arp' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'fifo_pkt25700' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'fifo_pkt26010' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'fifo_pkt26100' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'dfs/tx_fifo' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 929 ; free virtual = 9398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 929 ; free virtual = 9398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/pll/pll/pll_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/ip/pll/pll/pll_in_context.xdc, line 7).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_arp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_pkt25700. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_pkt26010. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_pkt26100. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dfs/tx_fifo. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 929 ; free virtual = 9398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'mdio_cfg'
+INFO: [Synth 8-802] inferred FSM for state register 'State_cfg_reg' in module 'mdio_cfg'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'tx_pkt_25700'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'tx_pkt_26100'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'tx_pkt_26010'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'rx_packets'
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'arbiter'
+INFO: [Synth 8-802] inferred FSM for state register 'dac_st2_reg' in module 'dac'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad9850_par'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                              001 |                               00
+              st_reading |                              010 |                               01
+              st_writing |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'mdio_cfg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    st_0 |                            00000 |                            00000
+                    st_1 |                            00001 |                            00001
+                    st_2 |                            00010 |                            00010
+                    st_3 |                            00011 |                            00011
+                    st_4 |                            00100 |                            00100
+                    st_5 |                            00101 |                            00101
+                    st_6 |                            00110 |                            00110
+                    st_7 |                            00111 |                            00111
+                    st_8 |                            01000 |                            01000
+                    st_9 |                            01001 |                            01001
+                   st_10 |                            01010 |                            01010
+                   st_11 |                            01011 |                            01011
+                   st_12 |                            01100 |                            01100
+                   st_13 |                            01101 |                            01101
+                   st_14 |                            01110 |                            01110
+                   st_15 |                            01111 |                            01111
+                   st_16 |                            10000 |                            10000
+                   st_17 |                            10001 |                            10001
+                   st_18 |                            10010 |                            10010
+                   st_19 |                            10011 |                            10011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_cfg_reg' using encoding 'sequential' in module 'mdio_cfg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    trig |                              001 |                              010
+                    sync |                              010 |                              001
+               write_hdr |                              011 |                              011
+              write_data |                              100 |                              101
+               write_fcs |                              101 |                              110
+                  end_tx |                              110 |                              111
+               wait_data |                              111 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'tx_pkt_25700'
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_gen_25700.vhd:198]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                              000
+               write_hdr |                               01 |                              001
+               write_fcs |                               10 |                              011
+                  end_tx |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'tx_pkt_26100'
+WARNING: [Synth 8-327] inferring latch for variable 'set_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:171]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26100.vhd:171]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                              000
+               write_hdr |                               01 |                              001
+               write_fcs |                               10 |                              011
+                  end_tx |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'tx_pkt_26010'
+WARNING: [Synth 8-327] inferring latch for variable 'set_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:154]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_26010.vhd:156]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                 eth_hdr |                             0001 |                             0001
+                  ip_hdr |                             0010 |                             0010
+                 udp_hdr |                             0011 |                             0011
+                apo_data |                             0100 |                             0110
+               varu_data |                             0101 |                             0111
+                dfs_data |                             0110 |                             1000
+                 arp_hdr |                             0111 |                             0100
+             process_arp |                             1000 |                             0101
+                wait_end |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'rx_packets'
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:364]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_apo_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:365]
+WARNING: [Synth 8-327] inferring latch for variable 'rx_udp_dlen_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:468]
+WARNING: [Synth 8-327] inferring latch for variable 'set_26010_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:352]
+WARNING: [Synth 8-327] inferring latch for variable 'set_26100_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:356]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_oper_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:591]
+WARNING: [Synth 8-327] inferring latch for variable 'arp_oper_set_val_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:590]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:360]
+WARNING: [Synth 8-327] inferring latch for variable 'eth_type_rx_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:395]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:361]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_26010_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:353]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_26100_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/rx_packets.vhd:357]
+WARNING: [Synth 8-327] inferring latch for variable 'set_send_I_have_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:140]
+WARNING: [Synth 8-327] inferring latch for variable 'target_mac_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:141]
+WARNING: [Synth 8-327] inferring latch for variable 'target_ip_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/tx_pkt_arp.vhd:142]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 |                              000
+                   st_s1 |                           000010 |                              001
+                   st_s2 |                           000100 |                              010
+                   st_s3 |                           001000 |                              011
+                   st_s4 |                           010000 |                              100
+                  st_igp |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_state_reg' using encoding 'one-hot' in module 'arbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dac_st2_reg' using encoding 'one-hot' in module 'dac'
+WARNING: [Synth 8-327] inferring latch for variable 'set_envelope_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dac.vhd:175]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                             0000 |                             0000
+                 iSTATE2 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE7 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE4 |                             0111 |                             0111
+                 iSTATE6 |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ad9850_par'
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/ad9850_par.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'set_done1_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:278]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done1_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:280]
+WARNING: [Synth 8-327] inferring latch for variable 'set_done2_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:284]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done2_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/skp_rs485.vhd:286]
+WARNING: [Synth 8-327] inferring latch for variable 'set_26010_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:412]
+WARNING: [Synth 8-327] inferring latch for variable 'set_done1_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:428]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done1_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:430]
+WARNING: [Synth 8-327] inferring latch for variable 'set_26100_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:415]
+WARNING: [Synth 8-327] inferring latch for variable 'set_done2_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:435]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_done2_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/dfs_rs485.vhd:437]
+WARNING: [Synth 8-327] inferring latch for variable 'set_apo_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:1015]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_apo_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:1015]
+WARNING: [Synth 8-327] inferring latch for variable 'set_arp_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:1011]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_arp_done_t_reg' [/home/master/FPGA_proj/FACTOR2/factor2.srcs/sources_1/new/factor2.vhd:1011]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 917 ; free virtual = 9388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   4 Input   19 Bit       Adders := 3     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 16    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 14    
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+	   3 Input      1 Bit         XORs := 24    
+	   5 Input      1 Bit         XORs := 16    
+	   7 Input      1 Bit         XORs := 28    
+	   6 Input      1 Bit         XORs := 28    
+	   4 Input      1 Bit         XORs := 4     
+	   9 Input      1 Bit         XORs := 13    
+	  10 Input      1 Bit         XORs := 9     
+	  12 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
++---Registers : 
+	             1360 Bit    Registers := 2     
+	              144 Bit    Registers := 1     
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 13    
+	               19 Bit    Registers := 3     
+	               16 Bit    Registers := 14    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 49    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 122   
++---Muxes : 
+	  53 Input 1360 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 9     
+	   8 Input   32 Bit        Muxes := 3     
+	   3 Input   32 Bit        Muxes := 1     
+	  13 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  20 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 4     
+	   9 Input   13 Bit        Muxes := 1     
+	   8 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 3     
+	   6 Input   10 Bit        Muxes := 1     
+	  53 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 38    
+	   3 Input    8 Bit        Muxes := 4     
+	   6 Input    8 Bit        Muxes := 6     
+	  45 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 4     
+	  37 Input    8 Bit        Muxes := 1     
+	  54 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 11    
+	  32 Input    8 Bit        Muxes := 1     
+	  57 Input    8 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	  62 Input    6 Bit        Muxes := 1     
+	  54 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	  62 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   8 Input    5 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 5     
+	  57 Input    5 Bit        Muxes := 1     
+	  20 Input    5 Bit        Muxes := 2     
+	  40 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 21    
+	   8 Input    4 Bit        Muxes := 2     
+	  13 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   9 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 14    
+	   8 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	  57 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	  53 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 226   
+	   5 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 66    
+	  62 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 24    
+	   6 Input    1 Bit        Muxes := 25    
+	   8 Input    1 Bit        Muxes := 48    
+	   7 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 10    
+	  10 Input    1 Bit        Muxes := 53    
+	  11 Input    1 Bit        Muxes := 3     
+	  12 Input    1 Bit        Muxes := 6     
+	  19 Input    1 Bit        Muxes := 17    
+	  54 Input    1 Bit        Muxes := 9     
+	  57 Input    1 Bit        Muxes := 16    
+	  58 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 5     
+	  20 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM dac_inst/mem_varu_inst/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM dac_inst/mem_varu_inst/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM dac_inst/mem_varu_inst/RAM_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 842 ; free virtual = 9329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|adc_module  | C_SIN_TABLE2[0]     | 32x16         | LUT            | 
+|factor2     | adc/C_SIN_TABLE2[0] | 32x15         | LUT            | 
++------------+---------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|factor2     | dac_inst/mem_varu_inst/RAM_reg | 1 K x 8(NO_CHANGE)     | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------+-----------+----------------------+--------------------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives               | 
++------------+-----------------------+-----------+----------------------+--------------------------+
+|factor2     | skp/mem1_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | skp/mem2_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | skp/mem3_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | dfs/mem1_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|factor2     | dfs/mem2_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|factor2     | dfs/mem3_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++------------+-----------------------+-----------+----------------------+--------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 701 ; free virtual = 9237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 733 ; free virtual = 9233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|factor2     | dac_inst/mem_varu_inst/RAM_reg | 1 K x 8(NO_CHANGE)     | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------+-----------+----------------------+--------------------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives               | 
++------------+-----------------------+-----------+----------------------+--------------------------+
+|factor2     | skp/mem1_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | skp/mem2_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | skp/mem3_inst/RAM_reg | Implied   | 32 x 8               | RAM32M x 2	              | 
+|factor2     | dfs/mem1_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|factor2     | dfs/mem2_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
+|factor2     | dfs/mem3_inst/RAM_reg | Implied   | 256 x 8              | RAM64X1D x 8	RAM64M x 8	 | 
++------------+-----------------------+-----------+----------------------+--------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dac_inst/mem_varu_inst/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 734 ; free virtual = 9221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 719 ; free virtual = 9218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 719 ; free virtual = 9218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 728 ; free virtual = 9215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 717 ; free virtual = 9204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 717 ; free virtual = 9203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 717 ; free virtual = 9203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll           |         1|
+|2     |fifo_4k       |         4|
+|3     |fifo_1k       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |fifo_1k_bbox |     1|
+|2     |fifo_4k_bbox |     4|
+|6     |pll_bbox     |     1|
+|7     |BUFG         |     4|
+|8     |CARRY4       |   153|
+|9     |LUT1         |    97|
+|10    |LUT2         |   428|
+|11    |LUT3         |   404|
+|12    |LUT4         |   405|
+|13    |LUT5         |   410|
+|14    |LUT6         |  1325|
+|15    |MUXF7        |   198|
+|16    |MUXF8        |    89|
+|17    |RAM32M       |     6|
+|18    |RAM64M       |    24|
+|19    |RAM64X1D     |    24|
+|20    |RAMB18E1     |     1|
+|21    |FDPE         |   128|
+|22    |FDRE         |  4471|
+|23    |FDSE         |    81|
+|24    |LD           |   118|
+|25    |LDC          |    14|
+|26    |LDP          |     8|
+|27    |IBUF         |    77|
+|28    |IOBUF        |     1|
+|29    |OBUF         |    52|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.051 ; gain = 40.809 ; free physical = 717 ; free virtual = 9203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 2380.051 ; gain = 0.000 ; free physical = 765 ; free virtual = 9252
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2380.059 ; gain = 40.809 ; free physical = 765 ; free virtual = 9252
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2380.059 ; gain = 0.000 ; free physical = 851 ; free virtual = 9350
+INFO: [Netlist 29-17] Analyzing 636 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 5 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2380.059 ; gain = 0.000 ; free physical = 808 ; free virtual = 9301
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 195 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  LD => LDCE: 118 instances
+  LDC => LDCE: 10 instances
+  LDC => LDCE (inverted pins: G): 4 instances
+  LDP => LDPE: 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 2380.059 ; gain = 40.930 ; free physical = 963 ; free virtual = 9456
+INFO: [Common 17-1381] The checkpoint '/home/master/FPGA_proj/FACTOR2/factor2.runs/synth_1/factor2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file factor2_utilization_synth.rpt -pb factor2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 19 15:53:33 2021...
